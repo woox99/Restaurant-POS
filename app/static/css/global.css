@@ -26,6 +26,7 @@ body{
 .blue{
     background-color: #81aecd;
     color: #09113f;
+    border: 2px solid #81aecd;
 }
 .sm{
     border-radius: 10px;
@@ -37,6 +38,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
 
 .med{
@@ -46,6 +48,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     
 }
 .lg{
@@ -55,6 +58,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+.btn{
+    border-radius: 10px;
+    width: 145px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.hide{
+    opacity: 0;
 }
 
 .screen{
@@ -100,18 +118,31 @@ body{
     justify-content: space-around;
     height: 610px;
 }
-.fa-sort-down{
-    color: green;
-    font-size: 50px;
-}
+
 .buttons{
+    padding-top: 20px;
     background-color: #81aecd;
     border-radius: 10px;
     width: 513px;
-    height: 610px;
+    height: 590px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
 img{
     width: 40px;
+}
+.fa-sort-down{
+    margin-top: -25px;
+    color: green;
+    font-size: 50px;
+}
+.fa-sort-up{
+    margin-top: 25px;
+    color: green;
+    font-size: 50px;
+}
+a{
+    text-decoration: none;
 }
