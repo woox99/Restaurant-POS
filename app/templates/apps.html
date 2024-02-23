@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/apps.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="top">
+            <div class="light med"><img src="{% static 'assets/table.png' %}" /></div>
+            <div class="light med">Clear</div>
+            <div class="light med">Split</div>
+            <div class="light med"># Guests</div>
+            <div class="light med" style="background-color: green; color: white; margin-left: 50px; margin-right: 50px;">Done</div>
+            <div class="light med">Send Stay</div>
+            <div class="light med">Send</div>
+        </div>
+
+        <div class="middle">
+            <div class="display">
+
+            </div>
+            <div class="tabs">
+                <div class="blue lg" >APPS</div>
+                <div class="dark lg">SOUPS n SALADS</div>
+                <div class="dark lg">STEAKS</div>
+                <div class="dark lg">SEAFOOD</div>
+                <div class="dark lg">ADD-ONS</div>
+                <div class="dark lg">SIDES</div>
+                <div class="dark lg">DESSERTS</div>
+                <div class="dark lg">BAR</div>
+                <div class="dark lg">WINE</div>
+                <div class="dark lg"><i class="fa-solid fa-sort-down"></i></div>
+            </div>
+            <div class="buttons">
+
+            </div>
+        </div>
+
+
+        <div class="bottom">
+            <div class="light med">Close</div>
+            <div class="light med" style="margin-right: 300px;">Add</div>
+            <div class="light sm"><p>Save</p> <p>Card</p></div>
+            <div class="light sm">Quantitiy</div>
+            <div class="light sm">Repeat</div>
+            <div class="light sm">Modify</div>
+            <div class="light sm">Delete</div>
+            <div class="light sm" style="color: white;">Reprint Check</div>
+            <div class="light sm">Send</div>
+            <div class="light sm"><p>Send</p> <p>Stay</p></div>
+        </div>
+
+    </div>
+    
+
+    <script src="{% static 'js/apps.js' %}"></script>
+</body>
+</html>

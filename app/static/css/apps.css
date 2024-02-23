@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* BUTTONS */
+.light{
+    background-color: #8189a5;
+    color: #09113f;
+}
+.dark{
+    background-color: #3c3d42;
+    color: #81aecd;
+    border: 2px solid #81aecd;
+}
+.blue{
+    background-color: #81aecd;
+    color: #09113f;
+}
+.sm{
+    border-radius: 10px;
+    width: 95px;
+    height: 48px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.med{
+    border-radius: 10px;
+    width: 116px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.lg{
+    border-radius: 10px;
+    width: 145px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen{
+    position: relative;
+    width: 1171px;
+    height: 100vh;
+    background-color: #09113f;
+}
+.top{
+    display: flex;
+    height: 59px;
+    width: 100%;
+    padding-top: 2px;
+    gap: 3px;
+    /* background-color: red; */
+}
+.middle{
+    height: 630px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.bottom{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2px;
+    gap: 3px;
+    /* background-color: red; */
+}
+
+.display{
+    background-color: #b1b2b5;
+    width: 426px;
+    height: 630px;
+}
+.tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 610px;
+}
+.fa-sort-down{
+    color: green;
+    font-size: 50px;
+}
+.buttons{
+    background-color: #81aecd;
+    border-radius: 10px;
+    width: 513px;
+    height: 610px;
+}
+
+
+img{
+    width: 40px;
+}
