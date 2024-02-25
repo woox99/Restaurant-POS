@@ -112,6 +112,9 @@ body{
     width: 426px;
     height: 630px;
 }
+.completed{
+    background-color: green;
+}
 .tabs{
     display: flex;
     flex-direction: column;

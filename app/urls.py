@@ -17,5 +17,6 @@ urlpatterns = [
     
     path('create/<str:name>', views.create),
     path('getPool', views.getPool),
+    path('toggle/<str:name>', views.toggle),
 
 ]
