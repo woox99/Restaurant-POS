@@ -67,4 +67,14 @@ def desserts2(request):
     return render(request, 'desserts2.html')
 def bar(request):
     return render(request, 'bar.html')
+def page2(request):
+    return render(request, 'page2.html')
+def page1(request):
+    return render(request, 'page1.html')
+def HH(request):
+    return render(request, 'HH.html')
+def HH2(request):
+    return render(request, 'HH2.html')
+def HH3(request):
+    return render(request, 'HH3.html')
 
