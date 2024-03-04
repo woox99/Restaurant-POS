@@ -6,6 +6,7 @@
     <title>Document</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bar2.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
 </head>
 <body onload="getPool()">
@@ -35,7 +36,7 @@
                     <div class="dark lg">SOUPS n SALADS</div>
                 </a>
                 <a href="/steaks">
-                    <div class="blue lg">STEAKS</div>
+                    <div class="dark lg">STEAKS</div>
                 </a>
                 <a href="/seafood">
                     <div class="dark lg">SEAFOOD</div>
@@ -50,7 +51,7 @@
                     <div class="dark lg">DESSERTS</div>
                 </a>
                 <a href="/bar">
-                    <div class="dark lg">BAR</div>
+                    <div class="blue lg">BAR</div>
                 </a>
                 <a href="/wine">
                     <div class="dark lg">WINE</div>
@@ -62,35 +63,46 @@
 
             <!-- BUTTONS -->
             <div class="buttons">
-                <div class="left">
-                    <div class="light btn" onclick="toggle(this)">8oz FILET</div>
-                    <div class="light btn" onclick="toggle(this)">B I RIB</div>
-                    <div class="light btn" onclick="toggle(this)">30oz PORTER</div>
-                    <div class="light btn" onclick="toggle(this)">CHICK</div>
-                    <div class="light btn" onclick="toggle(this)">VEALLONGBONE</div>
-                    <div class="light btn" onclick="toggle(this)">HOT PLATE</div>
-                    <div class="light btn" onclick="toggle(this)">12oz FILET WAG</div>
-                </div>
-                <div class="center">
-                    <div class="light btn" onclick="toggle(this)">12oz FILET</div>
-                    <div class="light btn" onclick="toggle(this)">STRIP</div>
-                    <div class="light btn" onclick="toggle(this)">36oz Rib Eye</div>
-                    <div class="light btn" onclick="toggle(this)">CAP STEAK</div>
-                    <div class="light btn" onclick="toggle(this)">LONG</div>
-                    <div class="light btn" onclick="toggle(this)">COLD PLATE</div>
-                    <div class="light btn" onclick="toggle(this)">**********</div>
-                </div>
-                <div class="right">
-                    <div class="light btn" onclick="toggle(this)">RIB EYE</div>
-                    <div class="light btn" onclick="toggle(this)">PORK</div>
-                    <div class="light btn" onclick="toggle(this)">LAMB</div>
-                    <div class="light btn" onclick="toggle(this)">MEDALLION</div>
-                    <div class="light btn" onclick="toggle(this)">8oz GREEK</div>
-                    <div class="light btn" onclick="toggle(this)">12oz GREEK</div>
-                    <div class="light btn" onclick="toggle(this)">10oz NY WAG</div>
-                    <a href="/steaks2">
-                        <div class="light btn"><i class="fa-solid fa-sort-down"></i></div>
-                    </a>
+                <div class="bar-lable">BEER</div>
+                <div class="columns">
+                    <div class="left">
+                        <div class="bar btn"></div>
+                        <div class="bar btn"></div>
+                        <div class="bar btn"></div>
+                        <div class="bar btn" onclick="toggle(this)">SEDUCTION</div>
+                        <div class="bar btn" onclick="toggle(this)">DAIQUIRI</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">OLD FASHIONED</div>
+                        <div class="bar btn"></div>
+                    </div>
+                    <div class="left-c">
+                        <div class="bar btn sm-font" onclick="toggle(this)">SIGNATURE SHAKE</div>
+                        <div class="bar btn"></div>
+                        <div class="bar btn"></div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">TINY BUBBLES</div>
+                        <div class="bar btn" onclick="toggle(this)">COCO MOJITO</div>
+                        <div class="bar btn"></div>
+                        <div class="bar btn green"></div>
+                    </div>
+                    <div class="right-c">
+                        <div class="bar btn sm-font" onclick="toggle(this)">STRAW CREAM</div>
+                        <div class="bar btn"></div>
+                        <div class="bar btn"></div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">PAUHANA MULE</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">WHISKEY SOUR</div>
+                        <div class="bar btn" onclick="toggle(this)">MAI TAI</div>
+                        <div class="bar btn green"></div>
+                    </div>
+                    <div class="right">
+                        <div class="bar btn sm-font" onclick="toggle(this)">MILLIONAIRE'S</div>
+                        <div class="bar btn"></div>
+                        <div class="bar btn"></div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">EMPRESS DIANNE</div>
+                        <div class="bar btn"></div>
+                        <div class="bar btn" onclick="toggle(this)">B.Z.T.</div>
+                        <a href="/bar">
+                            <div class="bar btn red">RETURN</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

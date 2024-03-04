@@ -6,7 +6,7 @@
     <title>Document</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/global.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bar2.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
 </head>
 <body onload="getPool()">
@@ -63,63 +63,47 @@
 
             <!-- BUTTONS -->
             <div class="buttons">
-                <div class="bar-lable">BAR MENU</div>
+                <div class="bar-lable">NON-ALC</div>
                 <div class="columns">
                     <div class="left">
-                        <a href="/nonalc">
-                            <div class="bar btn">NON-ALC</div>
-                        </a>
-                        <a href="">
-                            <div class="bar btn">GIN/SAKE</div>
-                        </a>
-                        <a href="">
-                            <div class="bar btn">COGNAC/ BRANDY</div>
-                        </a>
-                        <div class="bar btn"></div>
-                        <a href="">
-                            <div class="bar btn">WELLS</div>
-                        </a>
+                        <div class="bar btn" onclick="toggle(this)">WATER</div>
+                        <div class="bar btn" onclick="toggle(this)">TONIC</div>
+                        <div class="bar btn" onclick="toggle(this)">FRUIT PUNCH</div>
+                        <div class="bar btn" onclick="toggle(this)">CRAN</div>
+                        <div class="bar btn" onclick="toggle(this)">PINE</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">ARNOLD PALMER</div>
+                        <div class="bar btn" onclick="toggle(this)">SODA 0</div>
                     </div>
                     <div class="left-c">
-                        <a href="/beer">
-                            <div class="bar btn">BEER</div>
-                        </a>
-                        <a href="">
-                            <div class="bar btn">RUM</div>
-                        </a>
-                        <a href="">
-                            <div class="bar btn">CORDIALS</div>
-                        </a>
-                        <div class="bar btn"></div>
-                        <div class="bar btn"></div>
+                        <div class="bar btn" onclick="toggle(this)">STILL WATER</div>
+                        <div class="bar btn" onclick="toggle(this)">COKE</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">SHIRLEY TEMPLE</div>
+                        <div class="bar btn" onclick="toggle(this)">GRAPEFRUIT</div>
+                        <div class="bar btn" onclick="toggle(this)">V. MARY</div>
+                        <div class="bar btn" onclick="toggle(this)">PLANTATION</div>
+                        <div class="bar btn green" onclick="toggle(this)"></div>
                     </div>
                     <div class="right-c">
-                        <a href="/specialties">
-                            <div class="bar btn">SPECIALTIES</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">SPARKLING WATER</div>
+                        <div class="bar btn" onclick="toggle(this)">DIET</div>
+                        <div class="bar btn" onclick="toggle(this)">GINGER</div>
+                        <div class="bar btn" onclick="toggle(this)">LEMONADE</div>
+                        <div class="bar btn" onclick="toggle(this)">HOT TEA</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">MANGO ICED TEA</div>
+                        <a href="/nonalc2">
+                            <div class="bar btn green">>></div>
                         </a>
-                        <a href="">
-                            <div class="bar btn">TEQUILA</div>
-                        </a>
-                        <a href="">
-                            <div class="bar btn">SCOTCH</div>
-                        </a>
-                        <div class="bar btn"></div>
-                        <div class="bar btn"></div>
                     </div>
                     <div class="right">
-                        <a href="/vodka">
-                            <div class="bar btn">VODKA</div>
+                        <div class="bar btn" onclick="toggle(this)">SODA</div>
+                        <div class="bar btn" onclick="toggle(this)">SPRITE</div>
+                        <div class="bar btn" onclick="toggle(this)">GINGER BEER</div>
+                        <div class="bar btn" onclick="toggle(this)">OJ</div>
+                        <div class="bar btn" onclick="toggle(this)">ICED TEA</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">STRAW ICED TEA</div>
+                        <a href="/bar">
+                            <div class="bar btn red">RETURN</div>
                         </a>
-                        <a href="">
-                            <div class="bar btn">BOURBON</div>
-                        </a>
-                        <a href="/cocktails_A">
-                            <div class="bar btn">COCKTAILS (A-M)</div>
-                        </a>
-                        <a href="/cocktails_N">
-                            <div class="bar btn">COCKTAILS (N-Z)</div>
-                        </a>
-                        <div class="bar btn"></div>
                     </div>
                 </div>
             </div>

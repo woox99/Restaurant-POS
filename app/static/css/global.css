@@ -59,6 +59,7 @@ body{
     align-items: center;
     cursor: pointer;
 }
+
 .btn{
     border-radius: 10px;
     width: 145px;
@@ -132,17 +133,7 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
-/* .bar-lable{
-    background-color: rgb(161, 6, 6);
-    width: 425px;
-    height: 60px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-} */
+
 
 
 img{

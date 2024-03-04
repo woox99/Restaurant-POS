@@ -6,7 +6,7 @@
     <title>Document</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/global.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bar2.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
 </head>
 <body onload="getPool()">
@@ -63,63 +63,47 @@
 
             <!-- BUTTONS -->
             <div class="buttons">
-                <div class="bar-lable">BAR MENU</div>
+                <div class="bar-lable">COCKTAILS (A-M)</div>
                 <div class="columns">
                     <div class="left">
-                        <a href="/nonalc">
-                            <div class="bar btn">NON-ALC</div>
-                        </a>
-                        <a href="">
-                            <div class="bar btn">GIN/SAKE</div>
-                        </a>
-                        <a href="">
-                            <div class="bar btn">COGNAC/ BRANDY</div>
-                        </a>
-                        <div class="bar btn"></div>
-                        <a href="">
-                            <div class="bar btn">WELLS</div>
-                        </a>
+                        <div class="bar btn" onclick="toggle(this)">ALEXANDER</div>
+                        <div class="bar btn" onclick="toggle(this)">COSMO- POLITAN</div>
+                        <div class="bar btn" onclick="toggle(this)">GREY- HOUND</div>
+                        <div class="bar btn" onclick="toggle(this)">LAVA FLOW</div>
+                        <div class="bar btn" onclick="toggle(this)">MANHATTAN</div>
+                        <div class="bar btn" onclick="toggle(this)">MUD SLIDE</div>
+                        <div class="bar btn hide" onclick="toggle(this)"></div>
                     </div>
                     <div class="left-c">
-                        <a href="/beer">
-                            <div class="bar btn">BEER</div>
-                        </a>
-                        <a href="">
-                            <div class="bar btn">RUM</div>
-                        </a>
-                        <a href="">
-                            <div class="bar btn">CORDIALS</div>
-                        </a>
-                        <div class="bar btn"></div>
-                        <div class="bar btn"></div>
+                        <div class="bar btn" onclick="toggle(this)">AMARETTO SOUR</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">DARK N STORMY</div>
+                        <div class="bar btn" onclick="toggle(this)">HOT TODDY</div>
+                        <div class="bar btn" onclick="toggle(this)">LEMON DROP</div>
+                        <div class="bar btn" onclick="toggle(this)">MARGARITA</div>
+                        <div class="bar btn" onclick="toggle(this)">BAILEY'S COFFEE</div>
+                        <div class="bar btn green"></div>
                     </div>
                     <div class="right-c">
-                        <a href="/specialties">
-                            <div class="bar btn">SPECIALTIES</div>
+                        <div class="bar btn" onclick="toggle(this)">BLUE HAWAII</div>
+                        <div class="bar btn" onclick="toggle(this)">GIBSON</div>
+                        <div class="bar btn" onclick="toggle(this)">KAMAKAZI</div>
+                        <div class="bar btn" onclick="toggle(this)">L.I. ICED TEA</div>
+                        <div class="bar btn" onclick="toggle(this)">MARTINI</div>
+                        <div class="bar btn" onclick="toggle(this)">IRISH COFFEE</div>
+                        <a href="/cocktails_A2">
+                            <div class="bar btn green">>></div>
                         </a>
-                        <a href="">
-                            <div class="bar btn">TEQUILA</div>
-                        </a>
-                        <a href="">
-                            <div class="bar btn">SCOTCH</div>
-                        </a>
-                        <div class="bar btn"></div>
-                        <div class="bar btn"></div>
                     </div>
                     <div class="right">
-                        <a href="/vodka">
-                            <div class="bar btn">VODKA</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">CHAMP COCKTAIL</div>
+                        <div class="bar btn" onclick="toggle(this)">GIMLET</div>
+                        <div class="bar btn" onclick="toggle(this)">KIR ROYAL</div>
+                        <div class="bar btn" onclick="toggle(this)">L.I. TOPSHELF</div>
+                        <div class="bar btn" onclick="toggle(this)">MINT JULEP</div>
+                        <div class="bar btn" onclick="toggle(this)">CADILLAC MARG</div>
+                        <a href="/bar">
+                            <div class="bar btn red">RETURN</div>
                         </a>
-                        <a href="">
-                            <div class="bar btn">BOURBON</div>
-                        </a>
-                        <a href="/cocktails_A">
-                            <div class="bar btn">COCKTAILS (A-M)</div>
-                        </a>
-                        <a href="/cocktails_N">
-                            <div class="bar btn">COCKTAILS (N-Z)</div>
-                        </a>
-                        <div class="bar btn"></div>
                     </div>
                 </div>
             </div>

@@ -11,6 +11,10 @@
 <body onload="getPool()">
     <div class="options">
         <a class="restart option" href="/">restart</a>
+        <p style="color: red;">{{latest_completion.completion_time}}s</p>
+        {% for time in completion_times %}
+            <p style="color: white;">{{time.completion_time}}s</p>
+        {% endfor %}
     </div>
     <div class="screen">
         <div class="top">
