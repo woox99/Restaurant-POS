@@ -6,15 +6,12 @@
     <title>Document</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bar2.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
 </head>
 <body onload="getPool()">
     <div class="options">
         <a class="restart option" href="/">restart</a>
-        <p style="color: red;">{{latest_completion.completion_time}}s</p>
-        {% for time in completion_times %}
-            <p style="color: white;">{{time.completion_time}}s</p>
-        {% endfor %}
     </div>
     <div class="screen">
         <div class="top">
@@ -29,11 +26,11 @@
 
         <div class="middle">
             <div class="display">
-                
+
             </div>
             <div class="tabs">
                 <a href="/apps">
-                    <div class="blue lg" >APPS</div>
+                    <div class="dark lg" >APPS</div>
                 </a>
                 <a href="/soups">
                     <div class="dark lg">SOUPS n SALADS</div>
@@ -54,7 +51,7 @@
                     <div class="dark lg">DESSERTS</div>
                 </a>
                 <a href="/bar">
-                    <div class="dark lg">BAR</div>
+                    <div class="blue lg">BAR</div>
                 </a>
                 <a href="/wine">
                     <div class="dark lg">WINE</div>
@@ -66,35 +63,47 @@
 
             <!-- BUTTONS -->
             <div class="buttons">
-                <div class="left">
-                    <div class="light btn" onclick="toggle(this)">OYS</div>
-                    <div class="light btn" onclick="toggle(this)">SHR C</div>
-                    <div class="light btn" onclick="toggle(this)">BRUSCHETTA</div>
-                    <div class="light btn" onclick="toggle(this)">CRAB</div>
-                    <div class="light btn" onclick="toggle(this)">SCAL</div>
-                    <div class="light btn" onclick="toggle(this)">P SCAL</div>
-                    <div class="light btn" onclick="toggle(this)">CAVIAR</div>
+                <div class="bar-lable">CORDIALS
                 </div>
-                <div class="center">
-                    <div class="light btn" onclick="toggle(this)">POKE</div>
-                    <div class="light btn" onclick="toggle(this)">STK TARTARE</div>
-                    <div class="light btn" onclick="toggle(this)">BURRATA</div>
-                    <div class="light btn" onclick="toggle(this)">F CALA</div>
-                    <div class="light btn" onclick="toggle(this)">SHR G</div>
-                    <div class="light btn" onclick="toggle(this)">CALA STUFF</div>
-                    <div class="light btn" onclick="toggle(this)">F OYS</div>
-                </div>
-                <div class="right">
-                    <div class="light btn" onclick="toggle(this)">SASH</div>
-                    <div class="light btn" onclick="toggle(this)">TOWER</div>
-                    <div class="light btn" onclick="toggle(this)">TARTINE</div>
-                    <div class="light btn" onclick="toggle(this)">KATSU</div>
-                    <div class="light btn" onclick="toggle(this)">A TARTARE</div>
-                    <div class="light btn" onclick="toggle(this)">SHR B</div>
-                    <div class="light btn" onclick="toggle(this)">BEEF CARP</div>
-                    <a href="/apps2">
-                        <div class="light btn"><i class="fa-solid fa-sort-down"></i></div>
-                    </a>
+                <div class="columns">
+                    <div class="left">
+                        <div class="bar btn" onclick="toggle(this)">ST. GERMAIN</div>
+                        <div class="bar btn" onclick="toggle(this)">B.B</div>
+                        <div class="bar btn" onclick="toggle(this)">COINTREAU</div>
+                        <div class="bar btn" onclick="toggle(this)">GODIVA</div>
+                        <div class="bar btn" onclick="toggle(this)">LIMONCELLO</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">LUXARDO MARASC</div>
+                        <div class="bar btn" onclick="toggle(this)">ANISETTE</div>
+                    </div>
+                    <div class="left-c">
+                        <div class="bar btn" onclick="toggle(this)">AMARETTO</div>
+                        <div class="bar btn" onclick="toggle(this)">CAMPARI</div>
+                        <div class="bar btn" onclick="toggle(this)">FERNET BRANCA</div>
+                        <div class="bar btn" onclick="toggle(this)">MIDORI</div>
+                        <div class="bar btn" onclick="toggle(this)">DRAMBUI</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">KALANI COCONUT</div>
+                        <div class="bar btn" onclick="toggle(this)">PEACH SCHNAPPS</div>
+                    </div>
+                    <div class="right-c">
+                        <div class="bar btn" onclick="toggle(this)">APEROL</div>
+                        <div class="bar btn" onclick="toggle(this)">CHAMBORD</div>
+                        <div class="bar btn" onclick="toggle(this)">FRANGELICO</div>
+                        <div class="bar btn" onclick="toggle(this)">GRAPPA</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">GRAND MARNIER</div>
+                        <div class="bar btn" onclick="toggle(this)">SAMBUCA NEGRA</div>
+                        <div class="bar btn green"></div>
+                    </div>
+                    <div class="right">
+                        <div class="bar btn" onclick="toggle(this)">BAILEYS</div>
+                        <div class="bar btn" onclick="toggle(this)">CHERRY HEERING</div>
+                        <div class="bar btn" onclick="toggle(this)">CHARTREUSE</div>
+                        <div class="bar btn" onclick="toggle(this)">KAHLUA</div>
+                        <div class="bar btn sm-font" onclick="toggle(this)">GM CENTENAIRE</div>
+                        <div class="bar btn" onclick="toggle(this)">SAMBUCA MELETTI</div>
+                        <a href="/bar">
+                            <div class="bar btn red">RETURN</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

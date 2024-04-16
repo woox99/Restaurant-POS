@@ -117,4 +117,22 @@ def cocktails_A2(request):
     return render(request, 'cocktails_A2.html')
 def cocktails_N(request):
     return render(request, 'cocktails_N.html')
+def bourbon(request):
+    return render(request, 'bourbon.html')
+def bourbon2(request):
+    return render(request, 'bourbon2.html')
+def cordials(request):
+    return render(request, 'cordials.html')
+def gin(request):
+    return render(request, 'gin.html')
+def rum(request):
+    return render(request, 'rum.html')
+def tequila(request):
+    return render(request, 'tequila.html')
+def cognac(request):
+    return render(request, 'cognac.html')
+def scotch(request):
+    return render(request, 'scotch.html')
+def wells(request):
+    return render(request, 'wells.html')
 
